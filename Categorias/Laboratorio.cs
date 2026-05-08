@@ -14,18 +14,18 @@ namespace Exercicios.Categorias.Laboratorio {
                     Console.ReadKey();
                 }
                 Console.WriteLine("\n=== EXERCÍCIOS LABORATÓRIO ===");
-                Console.WriteLine("1 - Determinar Sinal");
-                Console.WriteLine("2 - Determinar Paridade");
-                Console.WriteLine("3 - Classificar Idade");
-                Console.WriteLine("4 - Determinar Rendimento Mensal");
-                Console.WriteLine("5 - Determinar Dia da Semana");
-                Console.WriteLine("6 - Determinar Mês");
-                Console.WriteLine("7 - Converter Temperaturas");
-                Console.WriteLine("8 - Determinar a Média de Idade da Turma");
-                Console.WriteLine("9 - Categoriza Valores");
-                Console.WriteLine("10 - Quantidade de Pares e Ímpares");
-                Console.WriteLine("11 - Identifica Primo");
-                Console.WriteLine("12 - Pontuação Final no Campeonato");
+                Console.WriteLine("1 - Verificar Sinal de um Número");
+                Console.WriteLine("2 - Verificar Paridade de um Número");
+                Console.WriteLine("3 - Classificar Faixa Etária");
+                Console.WriteLine("4 - Calcular Salário com Horas Extras");
+                Console.WriteLine("5 - Obter Dia da Semana");
+                Console.WriteLine("6 - Obter Mês do Ano");
+                Console.WriteLine("7 - Converter Temperaturas entre Escalas");
+                Console.WriteLine("8 - Calcular Média de Idade da Turma");
+                Console.WriteLine("9 - Analisar Conjunto de Valores");
+                Console.WriteLine("10 - Sequência de Pares e Ímpares");
+                Console.WriteLine("11 - Verificar Número Primo");
+                Console.WriteLine("12 - Pontuação de Campeonato");
                 Console.WriteLine("0 - Voltar");
 
                 Console.Write("\nEscolha: ");
@@ -35,27 +35,27 @@ namespace Exercicios.Categorias.Laboratorio {
 
                 switch (opcao) {
                     case 1:
-                        DeterminaSinal();
+                        VerificarSinal();
                         break;
 
                     case 2:
-                        DeterminaParidade();
+                        VerificarParidade();
                         break;
 
                     case 3:
-                        ClassificarIdade();
+                        ClassificarFaixaEtaria();
                         break;
 
                     case 4:
-                        RendimentoMensal();
+                        CalcularSalarioFinal();
                         break;
 
                     case 5:
-                        InformaDia();
+                        ObterDiaSemana();
                         break;
 
                     case 6:
-                        InformaMes();
+                        ObterMes();
                         break;
 
                     case 7:
@@ -67,11 +67,11 @@ namespace Exercicios.Categorias.Laboratorio {
                         break;
 
                     case 9:
-                        CategorizaValores();
+                        AnalisarValores();
                         break;
 
                     case 10:
-                        ParesImpares();
+                        GerarSequenciaParesImpares();
                         break;
                     
                     case 11:
@@ -86,7 +86,7 @@ namespace Exercicios.Categorias.Laboratorio {
             } while (opcao != 0);
         }
 
-        public static void DeterminaSinal() {
+        public static void VerificarSinal() {
             Console.Write("Informe um número inteiro: ");
             int numero = int.Parse(Console.ReadLine()!);
 
@@ -98,7 +98,7 @@ namespace Exercicios.Categorias.Laboratorio {
                 Console.WriteLine("O número informado é um número nulo, ou seja, 0");
         }
 
-        public static void DeterminaParidade() {
+        public static void VerificarParidade() {
             Console.Write("Informe um número inteiro: ");
             int numero = int.Parse(Console.ReadLine()!);
 
@@ -108,7 +108,7 @@ namespace Exercicios.Categorias.Laboratorio {
                 Console.WriteLine("O número informado é ÍMPAR");
         }
 
-        public static void ClassificarIdade() {
+        public static void ClassificarFaixaEtaria() {
             Console.Write("Informe sua idade: ");
             int idade = int.Parse(Console.ReadLine()!);
 
@@ -122,7 +122,7 @@ namespace Exercicios.Categorias.Laboratorio {
                 Console.WriteLine("Idade INVÁLIDA!");
         }
 
-        public static void RendimentoMensal() {
+        public static void CalcularSalarioFinal() {
             Console.WriteLine("=== INFORME OS DADOS DO EMPREGADO ===");
 
             Console.Write("Salário Base: ");
@@ -147,7 +147,7 @@ namespace Exercicios.Categorias.Laboratorio {
             Console.WriteLine($"O rendimento total do empregado: R$ {salarioFinal:F2}");
         }
 
-        public static void InformaDia() {
+        public static void ObterDiaSemana() {
             Console.WriteLine("1 - Domingo\n2 - Segunda-Feira\n3 - Terça-Feira\n4 - Quarta-feira\n"
                     + "5 - Quinta-Feira\n6 - Sexta-Feira\n7 - Sábado");
 
@@ -187,7 +187,7 @@ namespace Exercicios.Categorias.Laboratorio {
             }
         }
 
-        public static void InformaMes() {
+        public static void ObterMes() {
             Console.Write("Informe um valor inteiro entre 1 e 12: ");
             switch(int.Parse((Console.ReadLine()!))) {
                 case 1:
@@ -324,7 +324,7 @@ namespace Exercicios.Categorias.Laboratorio {
             Console.WriteLine("\nA média de idade dos alunos é de " + (soma/qtdAlunos) + " anos.");
         }
 
-        public static void CategorizaValores() {
+        public static void AnalisarValores() {
             Console.Write("Quantos valores inteiros deseja ler: ");
             int n = int.Parse(Console.ReadLine()!);
 
@@ -368,7 +368,7 @@ namespace Exercicios.Categorias.Laboratorio {
             Console.WriteLine($"Quantidade de Nulos: {qtdNulos}");
         }
 
-        public static void ParesImpares() {
+        public static void GerarSequenciaParesImpares() {
             Console.WriteLine("=== INFORME UM NÚMERO INTEIRO ATÉ QUE A QUANTIDADE DE PARES SEJA"
             + " O DOBRO DE ÍMPARES ===");
 

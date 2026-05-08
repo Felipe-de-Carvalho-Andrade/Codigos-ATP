@@ -12,13 +12,13 @@ namespace Exercicios.Categorias.Iniciais {
                     Console.ReadKey();
                 }
                 Console.WriteLine("\n=== EXERCÍCIOS INICIAIS ===");
-                Console.WriteLine("1 - Calcular Herança");
-                Console.WriteLine("2 - Tamanho do Terreno");
-                Console.WriteLine("3 - Caixa d'água Quadrangular");
-                Console.WriteLine("4 - Caixa d'água Cilíndrica");
-                Console.WriteLine("5 - Emitir Contracheque");
-                Console.WriteLine("6 - Exibir Taxa de Alunos Reprovados");
-                Console.WriteLine("7 - Loja de Bicicletas");
+                Console.WriteLine("1 - Cálculo de Divisão de Herança");
+                Console.WriteLine("2 - Cálculo de Área de Terreno Quadrado");
+                Console.WriteLine("3 - Volume de Caixa d'Água Retangular");
+                Console.WriteLine("4 - Volume de Caixa d'Água Cilíndrica");
+                Console.WriteLine("5 - Cálculo de Holerite (Salário Líquido)");
+                Console.WriteLine("6 - Taxa de Reprovação por Turma");
+                Console.WriteLine("7 - Análise de Lucro de Loja de Bicicletas");
                 Console.WriteLine("0 - Voltar");
 
                 Console.Write("Escolha: ");
@@ -32,7 +32,7 @@ namespace Exercicios.Categorias.Iniciais {
                         break;
 
                     case 2:
-                        TamanhoTerreno();
+                        CalcularTerreno();
                         break;
 
                     case 3:
@@ -80,7 +80,7 @@ namespace Exercicios.Categorias.Iniciais {
             Console.WriteLine($"O irmão com {idadeC} anos de idade receberá: {(cota * idadeC):F2}");
         }
 
-        public void TamanhoTerreno() {
+        public void CalcularTerreno() {
             Console.Write("Comprimento do arame (m): ");
             double arame = double.Parse(Console.ReadLine()!);
 

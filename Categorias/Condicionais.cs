@@ -13,12 +13,12 @@ namespace Exercicios.Categorias.Condicionais {
                     Console.ReadKey();
                 }
                 Console.WriteLine("\n=== EXERCÍCIOS CONDICIONAIS ===");
-                Console.WriteLine("1 - Eleição");
-                Console.WriteLine("2 - Caixa Eletrônico");
-                Console.WriteLine("3 - Abastecer Veículo");
-                Console.WriteLine("4 - Propriedades dos Números");
-                Console.WriteLine("5 - Equação Polinomial de Grau 2");
-                Console.WriteLine("6 - Validação do Grafo");
+                Console.WriteLine("1 - Resolução de Eleição com Critérios de Desempate");
+                Console.WriteLine("2 - Sistema de Caixa Eletrônico");
+                Console.WriteLine("3 - Cálculo de Abastecimento de Veículo");
+                Console.WriteLine("4 - Análise de Conjunto de Números");
+                Console.WriteLine("5 - Resolução de Equação Quadrática (2º Grau)");
+                Console.WriteLine("6 - Validação de Grafo (Vértices e Arestas)");
                 Console.WriteLine("0 - Voltar");
 
                 Console.Write("Escolha: ");
@@ -40,11 +40,11 @@ namespace Exercicios.Categorias.Condicionais {
                         break;
                     
                     case 4:
-                        Numeros();
+                        AnalisarNumeros();
                         break;
 
                     case 5:
-                        EquacaoGrau2();
+                        ResolverEquacaoQuadratica();
                         break;
 
                     case 6:
@@ -184,7 +184,7 @@ namespace Exercicios.Categorias.Condicionais {
             Console.WriteLine($"Valor a pagar: R$ {valorPagar:F2}");
         }
 
-        public void Numeros() {
+        public void AnalisarNumeros() {
             int[] numeros = new int[4];
 
             int soma = 0;
@@ -227,7 +227,7 @@ namespace Exercicios.Categorias.Condicionais {
             Console.WriteLine($"Quantidade de nulos (zero): {nulos}");
         }
 
-        public void EquacaoGrau2() {
+        public void ResolverEquacaoQuadratica() {
             double a, b, c;
 
             Console.Write("Informe o valor do coeficiente 'a': ");
